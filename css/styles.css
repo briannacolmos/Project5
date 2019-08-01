@@ -16,7 +16,8 @@ html, body {
 body {
     font-family: "Nunito", sans-serif;
     text-align: center;
-    background: rgba(235, 235, 235, 0.9);
+    background: rgba(255, 255, 255, 0.9);
+    
 }
 
 header {
@@ -30,7 +31,7 @@ header {
 
 header h1 {
     font-size: 1.25em;
-    color: rgba(50, 50, 50, 0.9);
+    color: #d53369;
     margin-top: 35px;
 }
 
@@ -87,9 +88,9 @@ header h1 {
     max-width: 360px;
     margin: 10px 10px 20px;
     padding: 10px;
-    background: rgba(245, 245, 245, 0.9);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 0.25em;
-    border: 1px solid rgba(50, 50, 50, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
     transition: .4s ease-out;
     overflow: hidden;
 }
@@ -110,13 +111,14 @@ header h1 {
 
 .card-text {
     font-size: 0.9em;
-    color: rgba(50, 50, 50, 0.7);
+    color: rgba(66, 45, 0, 0.7);
     margin: 7px auto;
     transition: .4s ease-out;
 }
 
 .cap {
     text-transform: capitalize;
+    color:rgba(131, 74, 0, 0.7);
 }
 
 
@@ -239,17 +241,13 @@ header h1 {
     }
 }
 
-
-/* ===================================== 
-   Desktop
-   Hover styles on desktop 
-======================================== */
-
+/** hover for cards and next buttons**/
 @media (min-width: 1024px) {
 
     .card:hover {
-        background: rgba(255, 255, 255, 1);
-        border: 1px solid rgba(50, 50, 50, 0.9);
+        background: rgb(255, 255, 255);
+        background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+        border: 5px solid rgba(255, 255, 255, 0.9);
     }
 
     .card:hover .card-text {
@@ -257,7 +255,8 @@ header h1 {
     }
 
     .btn:hover {
-        background: rgba(255, 255, 255, 1);
+        background: rgb(255, 255, 255);
+        background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
         color: rgba(25, 25, 25, 1); 
     }
 }
